@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
+  mode: "production",
   devtool: "inline-source-map",
   output: {
     filename: "bundle.js",
@@ -12,7 +12,8 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        include: path.resolve(__dirname, "src"),
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
