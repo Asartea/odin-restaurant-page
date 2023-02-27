@@ -1,15 +1,11 @@
 {
-	"env": {
-        "browser": true,
-        "es2021": true
-    },
-	"extends": [
-        "airbnb-base",
-		"plugin:import/recommended",
-		"prettier"
-    ],
-	"parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    }
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base", "plugin:import/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  }
 }
