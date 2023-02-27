@@ -1,22 +1,18 @@
-import "./header.css";
 import append from "../functions/append";
-import createButton from "./helpers/createButton";
+import toHTML from "../functions/toHTML";
 
 const header = () => {
-  const headerDiv = document.createElement("nav");
-  headerDiv.id = "header";
-  headerDiv.className = "header";
-  const homeButton = createButton("Home", "home-button");
-  headerDiv.appendChild(homeButton);
-  const navContainer = document.createElement("div")
-  navContainer.className = "nav-container"
-  const menuButton = createButton("Menu", "menu-button");
-  const aboutButton = createButton("About", "about-button");
-  const contactButton = createButton("Contact", "contact-button");
-  navContainer.appendChild(menuButton);
-  navContainer.appendChild(aboutButton);
-  navContainer.appendChild(contactButton);
-  headerDiv.appendChild(navContainer)
+  const html = `<banner class="flex justify-between px-4 py-3 bg-gradient-to-r from-rose-600 to-rose-800" id="header">
+    <button class="pl-2 text-3xl text-rose-50" id="home-button">Home</button>
+    <span class="m-1 text-5xl text-rose-200" id="title">Artisan Dove Restaurant</span>
+    <nav class="flex justify-between text-rose-50">
+      <button class="mx-3" id="menu-button">Menu</button>
+      <button class="mx-3" id="about-button">About</button>
+      <button class="mx-3" id="contact-button">Contact</button>
+    </div>
+  </nav>
+  `;
+  const headerDiv = toHTML(html);
   append(headerDiv);
 };
 
