@@ -1,4 +1,3 @@
-import "./about.css";
 import append from "../functions/append";
 
 const about = () => {

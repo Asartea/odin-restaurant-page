@@ -1,4 +1,3 @@
-import "./home.css";
 import append from "../functions/append";
 
 const home = () => {

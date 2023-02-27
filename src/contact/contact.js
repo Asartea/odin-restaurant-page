@@ -1,4 +1,3 @@
-import "./contact.css";
 import append from "../functions/append";
 
 const contact = () => {
