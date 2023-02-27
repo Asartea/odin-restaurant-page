@@ -1,0 +1,17 @@
+{
+	"name": "odin-restaurant-page",
+	"author": "Asartea",
+	"version": "0.0.0",
+	"private": "true",
+	"scripts": {
+		"lint": "npx eslint --fix --cache .",
+		"format": "npx prettier . --write --cache --plugin-search-dir=."
+	},
+	"devDependencies": {
+		"eslint": "^8.35.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.6.0",
+		"eslint-plugin-import": "^2.27.5",
+		"prettier": "^2.8.4"
+	}
+}
