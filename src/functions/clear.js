@@ -1,7 +1,7 @@
 const clear = () => {
-  const content = document.getElementById("content");
-  while (content.children.length > 1) {
-    content.children[1].remove();
+  const main = document.getElementById("main");
+  while (main.children.length > 0) {
+    main.children[0].remove();
   }
 };
 

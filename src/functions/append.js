@@ -1,5 +1,5 @@
-const append = (element) => {
-  const content = document.getElementById("content");
+const append = (element, id) => {
+  const content = document.getElementById(id);
   content.appendChild(element);
 };
 
